@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles/essentials.css">
+    <title>403</title>
+</head>
+
+<body>
+    <nav>
+        <a href="/"><img src="/img/logo_256.png" alt="Order Corner Logo" id="order-corner-logo_headline"></a>
+        <h2>
+            Order Corner
+        </h2>
+        <div id="menu-button">
+    </nav>
+    <section id="body">
+        <h1>Error - 403</h1>
+        <p>
+            Leider hast du nicht die nötigen Rechte, um auf diese Ressource zugreifen zu können.</p>
+        <h2>😕</h2>
+        <p>
+            Wenn du glaubst, dass es sich hierbei um einen Fehler von uns handelt, dann kontaktiere uns gerne unter <a
+                href="mailto:support@ordercorner.de">support@ordercorner.de</a>!
+        </p>
+        <a href="/" id="zurueckButton">
+            Zurück zur Homepage
+        </a>
+    </section>
+    <style>
+        #body {
+            flex-direction: column;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0;
+            min-height: calc(100% - 55px);
+        }
+
+        #body h1 {
+            background: rgb(131, 58, 180);
+            background: linear-gradient(90deg, rgba(131, 58, 180, 1) 0%, rgba(253, 29, 29, 1) 50%, rgba(252, 176, 69, 1) 100%);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        #body * {
+            text-align: center;
+            line-height: 1.4;
+        }
+
+        #body p {
+            max-width: 400px;
+        }
+
+        #body h2 {
+            margin: 0;
+        }
+
+        #body a {
+            text-decoration: none;
+            color: grey;
+        }
+
+        #zurueckButton {
+            margin: 20px;
+            color: white !important;
+            padding: 15px;
+            background-color: green;
+            border-radius: 25px;
+            -webkit-transition: transform 0.15s ease-out;
+            -moz-transition: transform 0.15s ease-out;
+            -o-transition: transform 0.15s ease-out;
+            transition: transform 0.15s ease-out;
+        }
+
+        #zurueckButton:hover {
+            transform: scale(1.05);
+        }
+    </style>
+</body>
+
+</html>
