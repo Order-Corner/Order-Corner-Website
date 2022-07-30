@@ -1,0 +1,64 @@
+#interduction {
+    align-items: center;
+    gap: 100px;
+    display: flex;
+}
+
+#interduction .logo {
+    height: 125px;
+    width: 125px;
+}
+
+#interduction>div {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+#interduction .paragraph {
+    width: 60%;
+}
+
+#interduction h1 span {
+    background: rgb(131, 58, 180);
+    background: linear-gradient(90deg, rgba(131, 58, 180, 1) 0%, rgba(253, 29, 29, 1) 50%, rgba(252, 176, 69, 1) 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.storeLinks {
+    flex-wrap: wrap;
+    gap: 30px;
+    display: flex;
+    height: 55px;
+}
+
+.storeLinks>a>div {
+    display: flex;
+    background-color: black;
+    align-items: center;
+    border-radius: 7.5px;
+    border: 1px solid #b2b4b7;
+    gap: 10px;
+    height: 53px !important;
+}
+
+.storeLinks>a>* {
+    height: 55px;
+}
+
+.storeLinks>a {
+    color: white;
+    text-decoration: none;
+}
+
+.storeLinks>a>div>img {
+    align-self: stretch;
+    margin: 5px;
+}
+
+.storeLinks>a>div>span {
+    margin-right: 10px;
+    white-space: nowrap;
+}

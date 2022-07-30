@@ -1,0 +1,72 @@
+/* CONFIG */
+
+html,
+body {
+    background-color: #2a343b;
+    overflow: scroll;
+    height: 100%;
+    margin: 0;
+    width: 100%;
+    color: white;
+    font-family: Inter,
+        Helvetica,
+        Apple Color Emoji,
+        Segoe UI Emoji,
+        NotoColorEmoji,
+        Noto Color Emoji,
+        Segoe UI Symbol,
+        Android Emoji,
+        EmojiSymbols,
+        -apple-system,
+        BlinkMacSystemFont,
+        Segoe UI,
+        Roboto,
+        Helvetica Neue,
+        Noto Sans,
+        sans-serif;
+    font-size: 16px;
+}
+
+/* Navigationbar */
+
+nav {
+    height: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0px 5px 5px gray;
+}
+
+nav>a {
+    margin: 7px;
+    height: 41px;
+    width: 41px;
+}
+
+#order-corner-logo_headline {
+    height: 41px;
+    width: 41px;
+}
+
+#menu-button {
+    background-color: aqua;
+    height: 41px;
+    width: 41px;
+}
+
+#interduction>img {
+    height: 80vh;
+}
+
+/* Standarts */
+
+h1 {
+    font-size: 3rem;
+    margin: 0;
+}
+
+section {
+    margin: 50px;
+    margin-left: 75px;
+    margin-right: 75px;
+}
