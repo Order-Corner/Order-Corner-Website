@@ -9,14 +9,84 @@
     <title>403</title>
 </head>
 
-<body>
-    <nav>
+<body id="body">
+    <nav id="nav">
         <a href="/"><img src="/img/logo_256.png" alt="Order Corner Logo" id="order-corner-logo_headline"></a>
         <h2>
             Order Corner
         </h2>
-        <div id="menu-button">
+        <div id="menuButton">
+            <div onclick="foldMenu()" id="menuButtonDiv">
+                <span></span>
+                <span></span>
+            </div>
+        </div>
     </nav>
+    <div id="menu">
+        <div id="subMenuDiv">
+            <img src="/img/iphone-menu.png" alt="Bild von dem Ladescreen der Order Corner App" loading="lazy">
+            <ul id="menuItemsList">
+                <li>
+                    <a href="/unsere-app.html">
+                        <h2>Unsere App</h2>
+                    </a>
+                </li>
+                <li>
+                    <a href="/unsere-app.html">
+                        <h2>FAQ</h2>
+                    </a>
+                </li>
+                <li>
+                    <a href="/ueber-uns.html">
+                        <h2>Über Uns</h2>
+                    </a>
+                </li>
+                <li>
+                    <h4>Order Corner für...</h4>
+                    <ul>
+                        <li>
+                            <a href="/fuer/schueler:innen.html">
+                                <h3>• Schüler:innen und Eltern</h3>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/fuer/lehrer:innen.html">
+                                <h3>• Lehrer:innen</h3>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/fuer/schulen.html">
+                                <h3>
+                                    • Schulen
+                                </h3>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/fuer/händler.html">
+                                <h3>
+                                    • Händler
+                                </h3>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <a href="#footer" id="rechtlichesLink">Rechtliches</a>
+    </div>
+    <div id="headersocialGrid">
+        <div id="verticalDivider"></div>
+        <a href="https://www.instagram.com/order_corner_freiburg/"><img src="/img/instagram.png"
+                alt="Unser Instagram Account" loading="lazy"></a>
+        <a href="https://twitter.com/order_corner"><img src="/img/twitter.png" alt="Unser Twitter Account"
+                loading="lazy"></a>
+        <a href="https://www.linkedin.com/company/order-corner/"><img src="/img/linkedin.png"
+                alt="Unser LinkedIn Account" loading="lazy"></a>
+        <a href="https://github.com/Order-Corner"><img src="/img/github.png" alt="Unser Github Account"
+                loading="lazy"></a>
+        <a href="https://discord.gg/Yu4VE5AM"><img src="/img/discord.png" alt="Unser Discord Account"
+                loading="lazy"></a>
+    </div>
     <section id="body">
         <h1>Error - 403</h1>
         <p>
@@ -30,6 +100,36 @@
             Zurück zur Homepage
         </a>
     </section>
+    <footer id="footer">
+        <div id="socialGrid">
+            <a href="https://www.instagram.com/order_corner_freiburg/"><img src="/img/instagram.png"
+                    alt="Unser Instagram Account"></a>
+            <a href="https://twitter.com/order_corner"><img src="/img/twitter.png" alt="Unser Twitter Account"></a>
+            <a href="https://www.linkedin.com/company/order-corner/"><img src="/img/linkedin.png"
+                    alt="Unser LinkedIn Account"></a>
+            <a href="https://github.com/Order-Corner"><img src="/img/github.png" alt="Unser Github Account"></a>
+            <a href="https://discord.gg/Yu4VE5AM"><img src="/img/discord.png" alt="Unser Discord Account"></a>
+        </div>
+        <div id="rechtlicheLinks">
+            <a href="/AGBs.html">AGBs</a>
+            <a href="/datenschutz.html">Datenschutz</a>
+            <a href="/impressum.html">Impressum</a>
+        </div>
+        <p id="mehrClicked">Mehr</p>
+        <div class="footer-divider"></div>
+        <h3>Order Corner © 2021 Bromedia</h3>
+    </footer>
+    <script>
+        document.getElementById("menuButton").addEventListener("click", function () {
+            document.getElementById("body").classList.toggle("menuactive");
+        });
+        document.getElementById("mehrClicked").addEventListener("click", function () {
+            document.getElementById("body").classList.toggle("menuactive");
+        });
+        document.getElementById("rechtlichesLink").addEventListener("click", function () {
+            document.getElementById("body").classList.toggle("menuactive");
+        });
+    </script>
     <style>
         #body {
             flex-direction: column;

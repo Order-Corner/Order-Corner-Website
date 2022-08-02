@@ -1,2 +1,17 @@
 <a href="https://www.flaticon.com/free-icons/web-site" title="web site icons">Web site icons created by Ilham Fitrotul Hayat - Flaticon</a>
 <a href="https://www.flaticon.com/free-icons/link" title="link icons">Link icons created by Md Tanvirul Haque - Flaticon</a>
+<a href="https://www.flaticon.com/free-icons/structure" title="structure icons">Structure icons created by Freepik - Flaticon</a>
+<a href="https://www.flaticon.com/free-icons/time" title="time icons">Time icons created by Freepik - Flaticon</a>
+<a href="https://www.flaticon.com/free-icons/easy" title="easy icons">Easy icons created by Freepik - Flaticon</a>
+<a href="https://www.flaticon.com/free-icons/students" title="students icons">Students icons created by Freepik - Flaticon</a>
+<a href="https://www.flaticon.com/free-icons/teacher" title="teacher icons">Teacher icons created by Freepik - Flaticon</a>
+<a href="https://www.flaticon.com/free-icons/school" title="school icons">School icons created by Freepik - Flaticon</a>
+<a href="https://www.flaticon.com/free-icons/store" title="store icons">Store icons created by Freepik - Flaticon</a>
+<a href="https://www.flaticon.com/free-icons/teenager" title="teenager icons">Teenager icons created by Freepik - Flaticon</a>
+<a href="https://www.flaticon.com/free-icons/teenager" title="teenager icons">Teenager icons created by Freepik - Flaticon</a>
+
+<a href="https://www.flaticon.com/free-icons/instagram" title="instagram icons">Instagram icons created by Pixel perfect - Flaticon</a>
+<a href="https://www.flaticon.com/free-icons/twitter" title="twitter icons">Twitter icons created by vidyavidz - Flaticon</a>
+<a href="https://www.flaticon.com/free-icons/linkedin" title="linkedin icons">Linkedin icons created by riajulislam - Flaticon</a>
+<a href="https://www.flaticon.com/free-icons/github" title="github icons">Github icons created by Pixel perfect - Flaticon</a>
+<a href="https://www.flaticon.com/free-icons/discord" title="discord icons">Discord icons created by Hight Quality Icons - Flaticon</a>
