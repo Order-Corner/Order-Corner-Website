@@ -34,6 +34,10 @@ body {
     scroll-behavior: smooth;
 }
 
+body.menuactive {
+    overflow: hidden !important;
+}
+
 /* Navigationbar */
 
 nav {
