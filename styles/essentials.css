@@ -72,10 +72,6 @@ nav>a {
     position: relative;
 }
 
-#interduction>img {
-    height: 80vh;
-}
-
 /* Standarts */
 
 h1 {
@@ -91,7 +87,9 @@ section {
 
 #rechtlicheLinks {
     flex-wrap: wrap;
-    gap: 20px;
+    justify-content: center;
+    column-gap: 20px;
+    row-gap: 5px;
     display: flex;
 }
 
@@ -101,6 +99,7 @@ section {
 }
 
 #mehrClicked {
+    cursor: pointer;
     color: rgb(157, 157, 157);
 }
 
@@ -128,6 +127,10 @@ footer {
     margin: 25px;
     display: flex;
     flex-direction: column;
+}
+
+footer>h3 {
+    text-align: center;
 }
 
 #menu {
@@ -168,7 +171,7 @@ body.menuactive #menu {
 }
 
 #subMenuDiv {
-    padding-top: 50px;
+    margin-top: 50px;
     height: calc(100% - 50px);
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -301,6 +304,10 @@ body.menuactive #menu {
     height: 2px;
     background-color: white;
     border-radius: 1px;
+    -webkit-transition: all 0.2s cubic-bezier(0.1, 0.82, 0.76, 0.965);
+    -moz-transition: all 0.2s cubic-bezier(0.1, 0.82, 0.76, 0.965);
+    -ms-transition: all 0.2s cubic-bezier(0.1, 0.82, 0.76, 0.965);
+    -o-transition: all 0.2s cubic-bezier(0.1, 0.82, 0.76, 0.965);
     transition: all 0.2s cubic-bezier(0.1, 0.82, 0.76, 0.965);
 }
 
@@ -320,4 +327,36 @@ body.menuactive #menu {
 #body.menuactive #menuButton span:last-of-type {
     transform: rotate(-45deg);
     bottom: 5px;
+}
+
+/* SMALLER SCREENS */
+
+@media only screen and (max-width: 750px) {
+    section {
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+
+    .footer-divider {
+        width: calc(100% - 40px);
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    section {
+        margin-left: 25px;
+        margin-right: 25px;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    #socialGrid {
+        gap: 20px;
+    }
+}
+
+@media only screen and (max-width: 300px) {
+    #socialGrid {
+        gap: 10px;
+    }
 }

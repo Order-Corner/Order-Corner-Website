@@ -21,6 +21,10 @@
     width: 60%;
 }
 
+#interduction>img {
+    height: 80vh;
+}
+
 #interduction h1 span {
     background: rgb(131, 58, 180);
     background: linear-gradient(90deg, rgba(131, 58, 180, 1) 0%, rgba(253, 29, 29, 1) 50%, rgba(252, 176, 69, 1) 100%);
@@ -204,4 +208,22 @@
     margin-left: 200px;
     margin-right: 200px;
     flex-direction: column;
+}
+
+/* SMALLER SCREENS */
+
+@media only screen and (max-width: 1200px) {
+    #interduction>img {
+        height: 70vh;
+    }
+
+    #interduction {
+        gap: 50px;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    #interduction>img {
+        height: 60vh;
+    }
 }
