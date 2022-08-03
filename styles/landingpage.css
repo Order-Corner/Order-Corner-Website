@@ -3,7 +3,9 @@
     gap: 100px;
     display: flex;
     margin-top: 0;
-    height: calc(100% - 56px);
+    padding-bottom: 15px;
+    padding-top: 15px;
+    min-height: calc(100% - 56px);
 }
 
 #interduction .logo {
@@ -35,7 +37,6 @@
 
 
 .storeLinks {
-    flex-wrap: wrap;
     gap: 30px;
     display: flex;
     height: 55px;
@@ -95,7 +96,7 @@
 #fuer-dich-grid {
     display: flex;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    column-gap: 30px;
+    gap: 30px;
     margin-top: 50px;
     margin-bottom: 150px;
 }
@@ -165,8 +166,8 @@
     margin-bottom: 150px;
 }
 
-#partnerGridItem>img {
-    object-fit: cover;
+.partnerGridItem>img {
+    object-fit: contain;
     width: 100%;
     max-height: 100%;
 }
@@ -222,8 +223,46 @@
     }
 }
 
+@media only screen and (max-width: 1100px) {
+    #fuer-dich-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
 @media only screen and (max-width: 1000px) {
     #interduction>img {
         height: 60vh;
+    }
+
+    #interduction .logo {
+        height: 100px;
+        width: 100px;
+    }
+
+    #vorteileGrid {
+        grid-template-areas:
+            "a b"
+            "c c";
+        margin-top: 100px;
+        margin-bottom: 200px;
+        grid-template-columns: unset;
+        row-gap: 100px;
+        justify-items: center
+    }
+
+    .vorteileGridItem.scaled {
+        transform: unset;
+    }
+
+    .vorteileGridItem {
+        max-width: 350px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    #fuer-dich-grid {
+        display: grid;
+        grid-template-columns: 1fr;
     }
 }

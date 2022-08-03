@@ -347,11 +347,19 @@ body.menuactive #menu {
         margin-left: 25px;
         margin-right: 25px;
     }
+
+    h1 {
+        font-size: 2.5rem;
+    }
 }
 
 @media only screen and (max-width: 400px) {
     #socialGrid {
         gap: 20px;
+    }
+
+    h1 {
+        font-size: 2.2rem;
     }
 }
 
