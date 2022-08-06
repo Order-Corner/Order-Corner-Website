@@ -1,3 +1,8 @@
+# TAKE HTTPS instead of HTTPS
+RewriteEngine On
+RewriteCond %{SERVER_PORT} !=443
+RewriteRule ^(.*)$ https://ordercorner.de/$1 [R=301,L]
+
 # Bad Request
 ErrorDocument 400 /error/400.html
 
@@ -12,3 +17,9 @@ ErrorDocument 500 /error/500.html
 
 # Kein Indexen der Server Struktur
 Options -Indexes
+
+
+# CACHE POLICY
+<filesMatch ".(ico|jpg|jpeg|png|gif|webp)$">
+ Header set Cache-Control "max-age=86400, public"
+</filesMatch>

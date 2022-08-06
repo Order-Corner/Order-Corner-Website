@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="de-De">
+<html lang="de">
 
 <head>
     <meta charset="UTF-8">
@@ -7,17 +7,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- IMPORTS -->
-    <link rel="stylesheet" href="styles/essentials.css">
-    <link rel="stylesheet" href="styles/landingpage.css">
+    <link rel="stylesheet" href="/styles/essentials.css">
+    <link rel="stylesheet" href="/styles/landingpage.css">
 
     <!-- SEO -->
     <title>Order Corner</title>
+    <meta name="description"
+        content="Offizielle Order Corner Website! Order Corner ist eine in Freiburg entwickelte App, die das Chaos beim jährlichen Schulanfang komplett abschafft!" />
     <link rel="icon" type="image/x-icon" href="/img/favicon.ico">
+    <meta name="robots" content="index,follow" />
+    <meta name="googlebot" content="index,follow" />
 
+    <!-- OG TAGS -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta property="og:url" content="https://ordercorner.de/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Order Corner" />
+    <meta property="og:description"
+        content="Offizielle Order Corner Website! Order Corner ist eine in Freiburg entwickelte App, die das Chaos beim jährlichen Schulanfang komplett abschafft!" />
+    <meta property="og:image" content="https://ordercorner.de/img/apple-touch-icon.png" />
+    <meta property="og:image:alt" content="Order Corner" />
+    <meta property="og:locale" content="de_DE" />
+    <meta property="og:site_name" content="Order Corner" />
+
+    <!-- PWA -->
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black">
     <meta name="apple-itunes-app" content="app-id=1567101699">
-
+    <link rel="apple-touch-icon" href="/img/apple-touch-icon.png">
 </head>
 
 <body id="body">
@@ -53,7 +70,7 @@
                     </a>
                 </li>
                 <li>
-                    <h4>Order Corner für...</h4>
+                    <span>Order Corner für...</span>
                     <ul>
                         <li>
                             <a href="/fuer/schueler:innen.html">
@@ -87,15 +104,15 @@
     </div>
     <div id="headersocialGrid">
         <div id="verticalDivider"></div>
-        <a href="https://www.instagram.com/order_corner_freiburg/"><img src="/img/instagram.png"
+        <a href="https://www.instagram.com/order_corner_freiburg/"><img src="/img/instagram.svg"
                 alt="Unser Instagram Account" loading="lazy"></a>
-        <a href="https://twitter.com/order_corner"><img src="/img/twitter.png" alt="Unser Twitter Account"
+        <a href="https://twitter.com/order_corner"><img src="/img/twitter.svg" alt="Unser Twitter Account"
                 loading="lazy"></a>
-        <a href="https://www.linkedin.com/company/order-corner/"><img src="/img/linkedin.png"
+        <a href="https://www.linkedin.com/company/order-corner/"><img src="/img/linkedin.svg"
                 alt="Unser LinkedIn Account" loading="lazy"></a>
-        <a href="https://github.com/Order-Corner"><img src="/img/github.png" alt="Unser Github Account"
+        <a href="https://github.com/Order-Corner"><img src="/img/github.svg" alt="Unser Github Account"
                 loading="lazy"></a>
-        <a href="https://discord.gg/Yu4VE5AM"><img src="/img/discord.png" alt="Unser Discord Account"
+        <a href="https://discord.gg/Yu4VE5AM"><img src="/img/discord.svg" alt="Unser Discord Account"
                 loading="lazy"></a>
     </div>
     <section id="interduction">
@@ -116,7 +133,7 @@
                         src="img/google-play.png" alt="Google Play Store Badge"></a>
                 <a href="https://app.ordercorner.de">
                     <div>
-                        <img src="img/web_logo.png" alt="Internet Logo">
+                        <img src="img/web.svg" alt="Internet Logo">
                         <span>
                             Web (Beta)
                         </span>
@@ -131,43 +148,45 @@
             Wieso Order Corner?
         </h1>
         <div id="vorteileGrid">
-            <div class="vorteileGridItem" style="grid-area: 'a';">
-                <img src="/img/stopwatch.png" alt="Bild von einer Stopuhr" loading="lazy">
+            <div class="vorteileGridItem">
+                <img src="/img/stopuhr.svg" alt="Bild von einer Stopuhr" loading="lazy">
                 <h2>
-                    Zeitsparend
+                    Spart Zeit und Stress
                 </h2>
                 <p>
-                    Um sich in der App anzumelden, benötigen Sie einen Klassencode, den Sie entweder in der Schule
-                    erhalten
-                    oder per E-Mail
-                    zugestellt kriegen. Diesen geben Sie dann in das Feld ein, welches auftaucht, wenn Sie im
-                    Anmeldefenster
+                    Schüler:innen und Eltern sparen durch Order Corner sehr viel Zeit und unnötigen Stress, da sie durch
+                    die App wesentlich
+                    viel weniger Zeit in überfüllten Schreibwarenläden verbringen müssen.<br>
+                    Lehrer:innen können durch Order Corner Ihre wertvolle Unterrichtszeit am Anfang des Schuljahres
+                    sinnvoll
+                    nutzen, anstatt sich darum kümmern zu müssen, dass alle Schüler:innen Ihre Materialien haben.
                 </p>
             </div>
-            <div class="vorteileGridItem scaled" style="grid-area: 'b';">
-                <img src="/img/diagram.png" alt="Bild von einer Stopuhr" loading="lazy">
+            <div class="vorteileGridItem scaled">
+                <img src="/img/diagram.svg" alt="Bild von einer Stopuhr" loading="lazy">
                 <h2>
                     Eliminiert Chaos
                 </h2>
                 <p>
-                    Um sich in der App anzumelden, benötigen Sie einen Klassencode, den Sie entweder in der Schule
-                    erhalten
-                    oder per E-Mail
-                    zugestellt kriegen. Diesen geben Sie dann in das Feld ein, welches auftaucht, wenn Sie im
-                    Anmeldefenster
+                    Durch Order Corner haben Schüler:innen und Eltern eine übersichtliche und vollständige
+                    Materialienliste am Anfang des Schuljahres,<br>anstatt von mehreren unübersichtliche und
+                    selbstgeschriebenen Listen aus den verschiedenen Fächern.
+                    Lehrer:innen haben durch die App direkt am Anfang des Schuljahres eine gut organisierte Klasse
+                    unterrichten, und
+                    müssen nicht mit den unterschiedlichen Materialienbeständen der verschiedenen Schüler:innen
+                    rumschlagen.
                 </p>
             </div>
-            <div class="vorteileGridItem" style="grid-area: 'c';">
-                <img src="/img/easy.png" alt="Bild von einer Stopuhr" loading="lazy">
+            <div class="vorteileGridItem">
+                <img src="/img/easy.svg" alt="Bild von einer Stopuhr" loading="lazy">
                 <h2>
-                    Extrem Intuitiv
+                    Intuitiv und Benutzerfreundlich
                 </h2>
                 <p>
-                    Um sich in der App anzumelden, benötigen Sie einen Klassencode, den Sie entweder in der Schule
-                    erhalten
-                    oder per E-Mail
-                    zugestellt kriegen. Diesen geben Sie dann in das Feld ein, welches auftaucht, wenn Sie im
-                    Anmeldefenster
+                    Die Order Corner App ist selbsterklärend und kinderleicht zu bedienen.<br>
+                    Und selbst wenn Fragen Ihrerseits aufkommen sollten, ist die ganze App mit Hilfe-Texten gespickt und
+                    das FAQ auf unserer Website wartet auf Sie.<br>
+                    Selbstverständlich sind wir auch rund um die Uhr für Sie unter unserer Support-E-mail erreichbar.
                 </p>
             </div>
         </div>
@@ -180,104 +199,71 @@
             <div class="fuer-dich-griditem">
                 <div class="fuer-dich-grid-item-headearea">
                     <div>
-                        <h6>
+                        <span>
                             Für
-                        </h6>
+                        </span>
                         <h2>
                             Schüler
                         </h2>
                     </div>
-                    <img src="/img/graduates.png" alt="Schüler Symbol" loading="lazy">
+                    <img src="/img/schueler.svg" alt="Schüler Symbol" loading="lazy">
                 </div>
                 <p>
-                    Um sich in der App anzumelden, benötigen Sie einen Klassencode, den Sie entweder in der Schule
-                    erhalten
-                    oder per E-Mail
-                    zugestellt kriegen. Diesen geben Sie dann in das Feld ein, welches auftaucht, wenn Sie im
-                    AnmeldefensterUm sich in der App anzumelden, benötigen Sie einen Klassencode, den Sie entweder in
-                    der Schule
-                    erhalten
-                    oder per E-Mail
-                    zugestellt kriegen. Diesen geben Sie dann in das Feld ein, welches auftaucht, wenn Sie im
-                    Anmeldefenster
+                    -
                 </p>
                 <a href="/fuer/schueler:innen.html">Mehr erfahren</a>
             </div>
             <div class="fuer-dich-griditem">
                 <div class="fuer-dich-grid-item-headearea">
                     <div>
-                        <h6>
+                        <span>
                             Für
-                        </h6>
+                        </span>
                         <h2>
                             Lehrer
                         </h2>
                     </div>
-                    <img src="/img/teacher.png" alt="Lehrer Symbol" loading="lazy">
+                    <img src="/img/lehrer.svg" alt="Lehrer Symbol" loading="lazy">
                 </div>
                 <p>
-                    Um sich in der App anzumelden, benötigen Sie einen Klassencode, den Sie entweder in der Schule
-                    erhalten
-                    oder per E-Mail
-                    zugestellt kriegen. Diesen geben Sie dann in das Feld ein, welches auftaucht, wenn Sie im
-                    AnmeldefensterUm sich in der App anzumelden, benötigen Sie einen Klassencode, den Sie entweder in
-                    der Schule
-                    erhalten
-                    oder per E-Mail
-                    zugestellt kriegen. Diesen geben Sie dann in das Feld ein, welches auftaucht, wenn Sie im
-                    Anmeldefenster
+                    -
                 </p>
                 <a href="/fuer/lehrer:innen.html">Mehr erfahren</a>
             </div>
             <div class="fuer-dich-griditem">
                 <div class="fuer-dich-grid-item-headearea">
                     <div>
-                        <h6>
+                        <span>
                             Für
-                        </h6>
+                        </span>
                         <h2>
                             Schulen
                         </h2>
                     </div>
-                    <img src="/img/school.png" alt="Schulen Symbol" loading="lazy">
+                    <img src="/img/schule.svg" alt="Schulen Symbol" loading="lazy">
                 </div>
                 <p>
-                    Um sich in der App anzumelden, benötigen Sie einen Klassencode, den Sie entweder in der Schule
-                    erhalten
-                    oder per E-Mail
-                    zugestellt kriegen. Diesen geben Sie dann in das Feld ein, welches auftaucht, wenn Sie im
-                    AnmeldefensterUm sich in der App anzumelden, benötigen Sie einen Klassencode, den Sie entweder in
-                    der Schule
-                    erhalten
-                    oder per E-Mail
-                    zugestellt kriegen. Diesen geben Sie dann in das Feld ein, welches auftaucht, wenn Sie im
-                    Anmeldefenster
+                    Order Corner ist eine großartige Möglichkeit, um Ihr Kollegium zu entlasten und den Schulstart an
+                    Ihrer Schule stressfreier und angenehmer für alle zu gestalten!
                 </p>
                 <a href="/fuer/schulen.html">Mehr erfahren</a>
             </div>
             <div class="fuer-dich-griditem">
                 <div class="fuer-dich-grid-item-headearea">
                     <div>
-                        <h6>
+                        <span>
                             Für
-                        </h6>
+                        </span>
                         <h2>
                             Händler
                         </h2>
                     </div>
-                    <img src="/img/store.png" alt="Händler Symbol" loading="lazy">
+                    <img src="/img/laden.svg" alt="Händler Symbol" loading="lazy">
                 </div>
                 <p>
-                    Um sich in der App anzumelden, benötigen Sie einen Klassencode, den Sie entweder in der Schule
-                    erhalten
-                    oder per E-Mail
-                    zugestellt kriegen. Diesen geben Sie dann in das Feld ein, welches auftaucht, wenn Sie im
-                    AnmeldefensterUm sich in der App anzumelden, benötigen Sie einen Klassencode, den Sie entweder in
-                    der Schule
-                    erhalten
-                    oder per E-Mail
-                    zugestellt kriegen. Diesen geben Sie dann in das Feld ein, welches auftaucht, wenn Sie im
-                    Anmeldefenster
+                    Sie vertreten einen Schreibwarenladen und würden gerne am Anfang des Schuljahres mehr Aufmerksamkeit
+                    auf Ihr Geschäft lenken? Dann ist Order Corner genau richtig für Sie! Werden Sie Order Corner
+                    Partner und geben Sie Schülern damit die Möglichkeit Ihre Materialien bequem bei Ihnen zu bestellen.
                 </p>
                 <a href="/fuer/haendler.html">
                     Mehr erfahren
@@ -291,8 +277,8 @@
             Unsere Partner
         </h1>
         <p>
-            Blabla Unsere Partner Blabla Unsere Partner Blabla Unsere Partner Blabla Unsere Partner Blabla Unsere
-            Partner Blabla Unsere Partner Blabla Unsere Partner Blabla Unsere Partner Blabla Unsere Partner
+            Wir sind stolz, dass wir folgende Unternehmen/Institutionen schon als unsere Partner gewonnen haben und
+            freuen uns sehr auf weitere erfolgreiche Zusammenarbeit in der Zukunft.
         </p>
         <div id="partnerGrid">
             <div class="partnerGridItem">
@@ -319,30 +305,36 @@
                     Dürfen wir uns vorstellen
                 </h2>
                 <p>
-                    Wir sind zwei Schüler des Berthold Gymnasium in Freiburg, die die App Order Corner gebaut haben.<br>
-                    Blabla Unsere Partner Blabla Unsere Partner Blabla Unsere Partner Blabla Unsere Partner Blabla
-                    Unsere
-                    Partner Blabla Unsere Partner Blabla Unsere Partner Blabla Unsere Partner Blabla Unsere Partner<br>
-                    Blabla Unsere Partner Blabla Unsere Partner Blabla Unsere Partner Blabla Unsere Partner Blabla
-                    Unsere
-                    Partner Blabla Unsere Partner Blabla Unsere Partner Blabla Unsere Partner Blabla Unsere Partner<br>
+                    Wir sind Max und Paul Eckstein, zwei Schüler am Berthold Gymnasium in Freiburg.<br>
+                    Wie alle Schüler:innen mussten wir immer in den ersten Wochen des neuen Schuljahres unzählige Male
+                    in den nächsten
+                    überfüllten Schreibwarenladen rennen um irgendwelche Materialien zu besorgen die wir bis zur
+                    nächsten Stunde parat haben sollten.<br>
+                    Darauf hatten wir keine Lust mehr. Unsere Lösung: Diese App!
                 </p>
+                <div id="ueberunskachel-bottomLine">
+                    <a href="/ueber-uns.html">Mehr erfahren</a>
+                    <div style="display: none;">
+                        <img src="/img/max.svg" alt="Symbolbild von Max klein" loading="lazy">
+                        <img src="/img/paul.svg" alt="Symbolbild von Paul klein" loading="lazy">
+                    </div>
+                </div>
             </div>
             <div id="ueberunskachel-images">
-                <img src="/img/max.png" alt="Symbolbild von Max" loading="lazy" class="left">
-                <img src="/img/paul.png" alt="Symbolbild von Paul" loading="lazy" class="right">
+                <img src="/img/max.svg" alt="Symbolbild von Max" loading="lazy" class="left">
+                <img src="/img/paul.svg" alt="Symbolbild von Paul" loading="lazy" class="right">
             </div>
         </div>
     </section>
     <footer id="footer">
         <div id="socialGrid">
-            <a href="https://www.instagram.com/order_corner_freiburg/"><img src="/img/instagram.png"
+            <a href="https://www.instagram.com/order_corner_freiburg/"><img src="/img/instagram.svg"
                     alt="Unser Instagram Account"></a>
-            <a href="https://twitter.com/order_corner"><img src="/img/twitter.png" alt="Unser Twitter Account"></a>
-            <a href="https://www.linkedin.com/company/order-corner/"><img src="/img/linkedin.png"
+            <a href="https://twitter.com/order_corner"><img src="/img/twitter.svg" alt="Unser Twitter Account"></a>
+            <a href="https://www.linkedin.com/company/order-corner/"><img src="/img/linkedin.svg"
                     alt="Unser LinkedIn Account"></a>
-            <a href="https://github.com/Order-Corner"><img src="/img/github.png" alt="Unser Github Account"></a>
-            <a href="https://discord.gg/Yu4VE5AM"><img src="/img/discord.png" alt="Unser Discord Account"></a>
+            <a href="https://github.com/Order-Corner"><img src="/img/github.svg" alt="Unser Github Account"></a>
+            <a href="https://discord.gg/Yu4VE5AM"><img src="/img/discord.svg" alt="Unser Discord Account"></a>
         </div>
         <div id="rechtlicheLinks">
             <a href="/AGBs.html">AGBs</a>

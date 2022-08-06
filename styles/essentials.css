@@ -140,13 +140,22 @@ footer>h3 {
     position: absolute;
     overflow: hidden;
     z-index: 500;
+    -webkit-transition: max-height 0.4s ease-out;
+    -moz-transition: max-height 0.4s ease-out;
+    -ms-transition: max-height 0.4s ease-out;
+    -o-transition: max-height 0.4s ease-out;
     transition: max-height 0.4s ease-out;
     height: calc(100% - var(--nav-height));
+    background-color: var(--page-background);
     border-bottom: 1px solid gray;
     transform: translateY(-1px);
 }
 
 #nav h2 {
+    -webkit-transition: transform 0.2s ease-out, background- 0.2s ease-in;
+    -moz-transition: transform 0.2s ease-out, background- 0.2s ease-in;
+    -ms-transition: transform 0.2s ease-out, background- 0.2s ease-in;
+    -o-transition: transform 0.2s ease-out, background- 0.2s ease-in;
     transition: transform 0.2s ease-out, background- 0.2s ease-in;
     background: rgb(255, 255, 255);
     background: linear-gradient(90deg, rgb(255, 255, 255) 0%, rgb(252, 252, 252) 100%);
@@ -160,19 +169,26 @@ body.menuactive #nav h2 {
     background: linear-gradient(90deg, rgba(131, 58, 180, 1) 0%, rgba(253, 29, 29, 1) 50%, rgba(252, 176, 69, 1) 100%);
     -webkit-background-clip: text;
     background-clip: text;
+    border: 1px solid transparent;
     -webkit-text-fill-color: transparent;
     z-index: 501;
     transform: translateY(300%) scale(2);
 }
 
 body.menuactive #menu {
+    overflow: scroll;
     max-height: calc(100% - 50px);
+    -webkit-transition: max-height 0.4s ease-out;
+    -moz-transition: max-height 0.4s ease-out;
+    -ms-transition: max-height 0.4s ease-out;
+    -o-transition: max-height 0.4s ease-out;
     transition: max-height 0.4s ease-out;
 }
 
 #subMenuDiv {
-    margin-top: 50px;
-    height: calc(100% - 50px);
+    overflow: scroll;
+    padding-top: 50px;
+    min-height: calc(calc(100% - 50px) - calc(1rem + 10px));
     display: grid;
     grid-template-columns: 1fr 1fr;
     background-color: var(--menu-background);
@@ -203,12 +219,14 @@ body.menuactive #menu {
 
 #subMenuDiv ul ul {
     padding: 20px;
-    margin: 0px;
+    margin-left: 15px;
+    margin-right: 15px;
     border-radius: 25px;
     border: 1px solid gray;
 }
 
-#subMenuDiv ul>li>h4 {
+#subMenuDiv ul>li>span {
+    font-weight: 700;
     margin-bottom: 0px;
     padding-right: 4px;
     padding-left: 4px;
@@ -235,6 +253,10 @@ body.menuactive #menu {
     font-size: 35px;
 }
 
+#subMenuDiv h2:first-of-type {
+    margin-top: 0px;
+}
+
 /* HEADER SOCIAL GRID */
 
 #headersocialGrid {
@@ -244,11 +266,15 @@ body.menuactive #menu {
     overflow: hidden;
     display: flex;
     height: 41px;
-    width: 248px;
+    width: 188px;
     max-width: 0px;
     gap: 7px;
     margin-left: 55px;
-    transition: max-width 0.2s ease-in;
+    -webkit-transition: max-width 0.3s ease-in;
+    -moz-transition: max-width 0.3s ease-in;
+    -ms-transition: max-width 0.3s ease-in;
+    -o-transition: max-width 0.3s ease-in;
+    transition: max-width 0.3s ease-in;
     align-items: center;
 }
 
@@ -257,9 +283,29 @@ body.menuactive #menu {
     max-height: 1px;
     background-color: gray;
     width: 1px;
-    transition-delay: 0.2s;
+
+    -webkit-transition-delay: 0.3s;
+    -moz-transition-delay: 0.3s;
+    -ms-transition-delay: 0.3s;
+    -o-transition-delay: 0.3s;
+    transition-delay: 0.3s;
+
+    -webkit-transition-property: max-height;
+    -moz-transition-property: max-height;
+    -ms-transition-property: max-height;
+    -o-transition-property: max-height;
     transition-property: max-height;
+
+    -webkit-transition-duration: 0.3s;
+    -moz-transition-duration: 0.3s;
+    -ms-transition-duration: 0.3s;
+    -o-transition-duration: 0.3s;
     transition-duration: 0.3s;
+
+    -webkit-transition-timing-function: ease-out;
+    -moz-transition-timing-function: ease-out;
+    -ms-transition-timing-function: ease-out;
+    -o-transition-timing-function: ease-out;
     transition-timing-function: ease-out;
 }
 
@@ -269,26 +315,53 @@ body.menuactive #menu {
 
 #headersocialGrid a,
 #headersocialGrid img {
-    height: 41px;
-    width: 41px;
+    height: 30px;
+    width: 30px;
 }
 
 #body.menuactive #headersocialGrid {
-    transition: max-width 0.2s ease-in;
-    max-width: 248px;
+
+    -webkit-transition: max-width 0.2s cubic-bezier(0.1, 0.82, 0.76, 0.965);
+    -moz-transition: max-width 0.2s cubic-bezier(0.1, 0.82, 0.76, 0.965);
+    -ms-transition: max-width 0.2s cubic-bezier(0.1, 0.82, 0.76, 0.965);
+    -o-transition: max-width 0.2s cubic-bezier(0.1, 0.82, 0.76, 0.965);
+    transition: max-width 0.2s cubic-bezier(0.1, 0.82, 0.76, 0.965);
+
+    max-width: 188px;
 }
 
 #rechtlichesLink {
+    margin-top: 5px;
     text-decoration: none;
     color: gray;
-    position: absolute;
-    bottom: 5px;
+    position: fixed;
     right: 5px;
     z-index: 999;
     display: none;
+
+    -webkit-transition-delay: 0.2s;
+    -moz-transition-delay: 0.2s;
+    -ms-transition-delay: 0.2s;
+    -o-transition-delay: 0.2s;
     transition-delay: 0.2s;
+
+    -webkit-transition-property: display;
+    -moz-transition-property: display;
+    -ms-transition-property: display;
+    -o-transition-property: display;
     transition-property: display;
-    transition-timing-function: ease-in;
+
+    -webkit-transition-duration: 0s;
+    -moz-transition-duration: 0s;
+    -ms-transition-duration: 0s;
+    -o-transition-duration: 0s;
+    transition-duration: 0s;
+
+    -webkit-transition-timing-function: ease-out;
+    -moz-transition-timing-function: ease-out;
+    -ms-transition-timing-function: ease-out;
+    -o-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
 }
 
 #body.menuactive #rechtlichesLink {
@@ -331,6 +404,21 @@ body.menuactive #menu {
 
 /* SMALLER SCREENS */
 
+
+
+@media only screen and (max-width: 1000px) {
+    #subMenuDiv>img {
+        display: none;
+    }
+
+    #subMenuDiv {
+        grid-template-columns: 1fr;
+        padding-top: 100px;
+        align-items: start;
+        min-height: calc(calc(100% - 100px) - calc(1rem + 10px));
+    }
+}
+
 @media only screen and (max-width: 750px) {
     section {
         margin-left: 50px;
@@ -363,8 +451,22 @@ body.menuactive #menu {
     }
 }
 
+@media only screen and (max-width: 350px) {
+    body.menuactive #nav h2 {
+        transform: translateY(300%) scale(1.7);
+    }
+
+    #subMenuDiv h2 {
+        font-size: 30px;
+    }
+}
+
 @media only screen and (max-width: 300px) {
     #socialGrid {
         gap: 10px;
+    }
+
+    #subMenuDiv h2 {
+        font-size: 25px;
     }
 }
