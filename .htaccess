@@ -20,6 +20,6 @@ Options -Indexes
 
 
 # CACHE POLICY
-<filesMatch ".(ico|jpg|jpeg|png|gif|webp)$">
- Header set Cache-Control "max-age=86400, public"
+<filesMatch ".(ico|webp|svg)$">
+ Header set Cache-Control "max-age=7776000, public"
 </filesMatch>
