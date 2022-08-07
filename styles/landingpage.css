@@ -39,7 +39,6 @@
 .storeLinks {
     gap: 30px;
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
     min-height: 55px;
     width: 563px;
@@ -56,18 +55,26 @@
     min-width: 156px;
 }
 
-.storeLinks>a>* {
-    height: 55px;
-}
-
 .storeLinks>a {
     color: white;
     text-decoration: none;
 }
 
 .storeLinks>a>div>img {
+    height: 43px;
+    width: 43px;
     align-self: stretch;
     margin: 5px;
+}
+
+#appStoreLinkImg {
+    height: 55px;
+    width: 164.531px;
+}
+
+#playStoreLinkImg {
+    height: 55px;
+    width: 185.484px;
 }
 
 .storeLinks>a>div>span {
@@ -285,6 +292,7 @@
 @media only screen and (max-width: 1000px) {
     .storeLinks {
         width: 377px;
+        flex-wrap: wrap;
     }
 
     #interduction .logo {

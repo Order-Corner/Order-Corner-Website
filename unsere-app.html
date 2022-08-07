@@ -113,18 +113,18 @@
                 loading="lazy"></a>
     </div>
     <section id="content">
-        <img src="/img/app.svg" alt="App Symbol" style="height: 128px; margin-bottom: 10px;">
+        <img src="/img/app.svg" alt="App Symbol" style="height: 128px; width: 128px; margin-bottom: 10px;">
         <h1>
             Unsere App
         </h1>
         <div class="appPreview">
             <div class="appPreview-header">
                 <div>
-                    <h3>
+                    <span>
                         Unsere&nbsp
-                    </h3>
-                    <h3 class="colorGradient">iOS</h3>
-                    <h3>&nbspApp</h3>
+                    </span>
+                    <span class="colorGradient">iOS</span>
+                    <span>&nbspApp</span>
                 </div>
                 <img src="/img/ios.svg" alt="iOS Logo">
             </div>
@@ -138,17 +138,17 @@
                 einzubauen und
                 generell zu optimieren, ihr könnt euch also auf Vieles freuen!
             </p>
-            <a href="https://apps.apple.com/de/app/id1567101699"><img src="img/app-store.webp" alt="App Store Badge"
-                    class="appLink"></a>
+            <a href="https://apps.apple.com/de/app/id1567101699"><img src="img/app-store.svg" alt="App Store Badge"
+                    class="appLink" id="appStoreLinkImg"></a>
         </div>
         <div class="appPreview">
             <div class="appPreview-header">
                 <div>
-                    <h3>
+                    <span>
                         Unsere&nbsp
-                    </h3>
-                    <h3 class="colorGradient">Android</h3>
-                    <h3>&nbspApp</h3>
+                    </span>
+                    <span class="colorGradient">Android</span>
+                    <span>&nbspApp</span>
                 </div>
                 <img src="/img/android.svg" alt="Android Logo">
             </div>
@@ -163,16 +163,16 @@
                 optimieren, ihr könnt euch also auf Vieles freuen!
             </p>
             <a href="https://play.google.com/store/apps/details?id=de.ordercorner.order_corner_v2"><img
-                    src="img/google-play.webp" alt="Google Play Store Badge" class="appLink"></a>
+                    src="img/google-play.svg" alt="Google Play Store Badge" class="appLink" id="playStoreLinkImg"></a>
         </div>
         <div class="appPreview beta">
             <div class="appPreview-header">
                 <div>
-                    <h3>
+                    <span>
                         Unsere&nbsp
-                    </h3>
-                    <h3 class="colorGradient">Web</h3>
-                    <h3>&nbspApp</h3>
+                    </span>
+                    <span class="colorGradient">Web</span>
+                    <span>&nbspApp</span>
                 </div>
                 <img src="/img/web.svg" alt="Web Logo">
             </div>
@@ -253,6 +253,13 @@
 
         .appPreview-header>img {
             align-self: stretch;
+            height: 50px;
+            width: 50px;
+        }
+
+        .appPreview-header span {
+            font-size: 1.3rem;
+            font-weight: 700;
         }
 
         .appPreview-header div {
@@ -298,6 +305,18 @@
         .appLink.web>img {
             align-self: stretch;
             margin: 5px;
+            height: 43px;
+            width: 43px;
+        }
+
+        #appStoreLinkImg {
+            height: 55px;
+            width: 164.531px;
+        }
+
+        #playStoreLinkImg {
+            height: 55px;
+            width: 185.484px;
         }
 
         .appLinkLink {

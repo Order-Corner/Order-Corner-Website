@@ -40,9 +40,7 @@
 <body id="body">
     <nav id="nav">
         <a href="/"><img src="/img/logo_256.webp" alt="Order Corner Logo" id="order-corner-logo_headline"></a>
-        <h2>
-            Order Corner
-        </h2>
+        <h2>Order Corner</h2>
         <div id="menuButton">
             <div id="menuButtonDiv">
                 <span></span>
@@ -100,7 +98,7 @@
                 </li>
             </ul>
         </div>
-        <a href="#footer" id="rechtlichesLink">Rechtliches</a>
+        <a href="#bottom" id="rechtlichesLink">Rechtliches</a>
     </div>
     <div id="headersocialGrid">
         <div id="verticalDivider"></div>
@@ -127,10 +125,10 @@
                 dann stressfrei einsehen und besorgen zu können.
             </p>
             <div class="storeLinks">
-                <a href="https://apps.apple.com/de/app/id1567101699"><img src="img/app-store.webp"
-                        alt="App Store Badge"></a>
+                <a href="https://apps.apple.com/de/app/id1567101699"><img src="img/app-store.svg" alt="App Store Badge"
+                        id="appStoreLinkImg"></a>
                 <a href="https://play.google.com/store/apps/details?id=de.ordercorner.order_corner_v2"><img
-                        src="img/google-play.webp" alt="Google Play Store Badge"></a>
+                        src="img/google-play.svg" alt="Google Play Store Badge" id="playStoreLinkImg"></a>
                 <a href="https://app.ordercorner.de">
                     <div>
                         <img src="img/web.svg" alt="Internet Logo">
@@ -288,7 +286,7 @@
                 </span>
             </div>
             <div class="partnerGridItem">
-                <img src="/img/roseLogo.webp" alt="Logo des Berthold Gymnasium Freiburg" loading="lazy">
+                <img src="/img/roseLogo.webp" alt="Logo des Schreibwarenladen Rose" loading="lazy">
                 <span>
                     Schreibwaren Rose
                 </span>
@@ -345,6 +343,12 @@
         <div class="footer-divider"></div>
         <h3>Copyright © 2021 Bromedia</h3>
     </footer>
+    <a id="bottom">a</a>
+    <style>
+        #bottom {
+            visibility: hidden;
+        }
+    </style>
     <script>
         document.getElementById("menuButton").addEventListener("click", function () {
             document.getElementById("body").classList.toggle("menuactive");

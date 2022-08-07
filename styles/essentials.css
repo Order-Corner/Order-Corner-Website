@@ -152,25 +152,35 @@ footer>h3 {
 }
 
 #nav h2 {
-    -webkit-transition: transform 0.2s ease-out, background- 0.2s ease-in;
-    -moz-transition: transform 0.2s ease-out, background- 0.2s ease-in;
-    -ms-transition: transform 0.2s ease-out, background- 0.2s ease-in;
-    -o-transition: transform 0.2s ease-out, background- 0.2s ease-in;
-    transition: transform 0.2s ease-out, background- 0.2s ease-in;
+    position: relative;
+    display: block;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+    -webkit-background-clip: text !important;
+    background-clip: text !important;
+
+    -webkit-transition: transform 0.2s ease-out, background-image 0.2s ease-in;
+    -moz-transition: transform 0.2s ease-out, background-image 0.2s ease-in;
+    -ms-transition: transform 0.2s ease-out, background-image 0.2s ease-in;
+    -o-transition: transform 0.2s ease-out, background-image 0.2s ease-in;
+    transition: transform 0.2s ease-out, background-image 0.2s ease-in;
+
     background: rgb(255, 255, 255);
     background: linear-gradient(90deg, rgb(255, 255, 255) 0%, rgb(252, 252, 252) 100%);
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
+}
+
+#nav h2::before {
+    display: block;
+    position: relative;
+    height: 50px;
+    width: 50px;
+    background-color: red;
+    z-index: 502;
 }
 
 body.menuactive #nav h2 {
     background: rgb(131, 58, 180);
     background: linear-gradient(90deg, rgba(131, 58, 180, 1) 0%, rgba(253, 29, 29, 1) 50%, rgba(252, 176, 69, 1) 100%);
-    -webkit-background-clip: text;
-    background-clip: text;
-    border: 1px solid transparent;
-    -webkit-text-fill-color: transparent;
     z-index: 501;
     transform: translateY(300%) scale(2);
 }
