@@ -1,8 +1,10 @@
 # TAKE HTTPS instead of HTTP
 
-RewriteEngine On
-RewriteCond %{SERVER_PORT} !=443
-RewriteRule ^(.\*)$ https://ordercorner.de/$1 [R=301,L]
+<IfModule mod_rewrite.c>
+ RewriteEngine On
+ RewriteCond %{HTTPS} off
+ RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
+</IfModule>
 
 # Bad Request
 
