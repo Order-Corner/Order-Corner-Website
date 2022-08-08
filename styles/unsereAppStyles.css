@@ -1,0 +1,113 @@
+.appPreview {
+    margin-top: 30px;
+    margin-bottom: 50px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 25px;
+    border: 1px solid white;
+}
+
+.appPreview.beta::before {
+    content: 'Beta';
+    background-color: rgb(198, 20, 20);
+    padding: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+    display: inline-flex;
+    font-size: 10px;
+    transform: translateY(calc(-10px - 50%));
+    border-radius: 5px;
+}
+
+.appPreview-header {
+    display: flex;
+    justify-content: space-between;
+    height: 50px;
+}
+
+.appPreview-header>img {
+    align-self: stretch;
+    height: 50px;
+    width: 50px;
+}
+
+.appPreview-header span {
+    font-size: 1.3rem;
+    font-weight: 700;
+}
+
+.appPreview-header div {
+    display: flex;
+    align-items: center;
+}
+
+.colorGradient {
+    background: rgb(131, 58, 180);
+    background: linear-gradient(90deg, rgba(131, 58, 180, 1) 0%, rgba(253, 29, 29, 1) 50%, rgba(252, 176, 69, 1) 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.appPreview-header h3 {
+    margin: 0px;
+}
+
+.appPreview .divider {
+    height: 1px;
+    width: 100%;
+    background-color: white;
+    margin-top: 10px;
+}
+
+.appLink {
+    height: 55px;
+}
+
+.appLink.web {
+    min-width: 156px;
+    display: flex;
+    background-color: black;
+    align-items: center;
+    border-radius: 7.5px;
+    border: 1px solid #b2b4b7;
+    gap: 10px;
+    height: 53px !important;
+    display: inline-flex;
+}
+
+.appLink.web>img {
+    align-self: stretch;
+    margin: 5px;
+    height: 43px;
+    width: 43px;
+}
+
+#appStoreLinkImg {
+    height: 55px;
+    width: 164.531px;
+}
+
+#playStoreLinkImg {
+    height: 55px;
+    width: 185.484px;
+}
+
+.appLinkLink {
+    color: white;
+    text-decoration: none;
+}
+
+.appLink.web>span {
+    margin-right: 10px;
+    white-space: nowrap;
+}
+
+@media only screen and (max-width: 350px) {
+    .appPreview-header>img {
+        height: 30px;
+        align-self: center;
+    }
+}

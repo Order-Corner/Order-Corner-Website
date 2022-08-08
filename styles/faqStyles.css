@@ -1,0 +1,37 @@
+.collapsible-header-button {
+    background-color: transparent;
+    color: #FFF;
+    cursor: pointer;
+    padding: 5px;
+    padding-left: 0px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 22px;
+}
+
+.collapsible-header-button::before {
+    content: '+';
+    transition: transform 0.2s ease-out;
+    display: inline-block;
+    padding: 15px;
+    padding-right: 15px;
+    transform-origin: center;
+}
+
+.collapsible-header-button.active::before {
+    transform: rotate(45deg);
+}
+
+.content {
+    padding-left: 25px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+
+#faq-content {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}

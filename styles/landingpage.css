@@ -24,7 +24,8 @@
 }
 
 #interduction>img {
-    height: 80vh;
+    height: 600px;
+    width: 297px;
 }
 
 #interduction h1 span {
@@ -244,6 +245,10 @@
     flex-direction: column;
 }
 
+#ueberunskachel-bottomLine>div {
+    display: none;
+}
+
 #ueberunskachel a:hover::after,
 .fuer-dich-griditem>a:hover::after {
     max-width: 100px;
@@ -270,7 +275,8 @@
 
 @media only screen and (max-width: 1200px) {
     #interduction>img {
-        height: 70vh;
+        height: 500px;
+        width: 247.500px;
     }
 
     #interduction {

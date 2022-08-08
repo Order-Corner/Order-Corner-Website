@@ -1,0 +1,23 @@
+.quote {
+    padding-left: 20px;
+    border-left: 2px solid white;
+}
+
+.inset {
+    margin-left: 20px;
+}
+
+.callout {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.121);
+}
+
+.callout-symbol {
+    padding-right: 15px;
+    font-size: larger;
+}

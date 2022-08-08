@@ -1,25 +1,39 @@
-# TAKE HTTPS instead of HTTPS
+# TAKE HTTPS instead of HTTP
+
 RewriteEngine On
 RewriteCond %{SERVER_PORT} !=443
-RewriteRule ^(.*)$ https://ordercorner.de/$1 [R=301,L]
+RewriteRule ^(.\*)$ https://ordercorner.de/$1 [R=301,L]
 
 # Bad Request
+
 ErrorDocument 400 /error/400.html
 
 # Forbidden
+
 ErrorDocument 403 /error/403.html
 
 # Not Found
+
 ErrorDocument 404 /error/404.html
 
 # Internal Server Error
+
 ErrorDocument 500 /error/500.html
 
+# Multiple Choices
+
+ErrorDocument 300 /error/300.html
+
 # Kein Indexen der Server Struktur
+
 Options -Indexes
 
-
 # CACHE POLICY
+
 <filesMatch ".(ico|webp|svg)$">
- Header set Cache-Control "max-age=7776000, public"
+Header set Cache-Control "max-age=7776000, public"
 </filesMatch>
+
+# Only load Data from our Page
+
+Header set Content-Security-Policy "default-src 'self'; script-src 'self'; object-src 'self'; base-uri 'self'"

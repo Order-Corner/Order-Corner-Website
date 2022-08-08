@@ -1,0 +1,23 @@
+#impressumText {
+    line-height: 1.7;
+}
+
+.underlined {
+    text-decoration: underline;
+}
+
+.custom-link {
+    color: rgb(201, 201, 201);
+    text-decoration: none;
+}
+
+.custom-link-wrapper {
+    gap: 5px;
+    align-items: center;
+    display: inline-flex;
+}
+
+.custom-link-wrapper>img {
+    height: 18px;
+    width: 18px;
+}

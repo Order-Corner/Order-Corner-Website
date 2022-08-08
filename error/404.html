@@ -6,15 +6,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/styles/essentials.css">
+    <link rel="stylesheet" href="/styles/errorStyles.css">
     <title>404</title>
 </head>
 
 <body id="body">
     <nav id="nav">
         <a href="/"><img src="/img/logo_256.webp" alt="Order Corner Logo" id="order-corner-logo_headline"></a>
-        <h2>
-            Order Corner
-        </h2>
+        <h2>Order Corner</h2>
         <div id="menuButton">
             <div id="menuButtonDiv">
                 <span></span>
@@ -77,21 +76,18 @@
     <div id="headersocialGrid">
         <div id="verticalDivider"></div>
         <a href="https://www.instagram.com/order_corner_freiburg/"><img src="/img/instagram.svg"
-                alt="Unser Instagram Account" loading="lazy"></a>
-        <a href="https://twitter.com/order_corner"><img src="/img/twitter.svg" alt="Unser Twitter Account"
-                loading="lazy"></a>
+                alt="Unser Instagram Account"></a>
+        <a href="https://twitter.com/order_corner"><img src="/img/twitter.svg" alt="Unser Twitter Account"></a>
         <a href="https://www.linkedin.com/company/order-corner/"><img src="/img/linkedin.svg"
-                alt="Unser LinkedIn Account" loading="lazy"></a>
-        <a href="https://github.com/Order-Corner"><img src="/img/github.svg" alt="Unser Github Account"
-                loading="lazy"></a>
-        <a href="https://discord.gg/Yu4VE5AM"><img src="/img/discord.svg" alt="Unser Discord Account"
-                loading="lazy"></a>
+                alt="Unser LinkedIn Account"></a>
+        <a href="https://github.com/Order-Corner"><img src="/img/github.svg" alt="Unser Github Account"></a>
+        <a href="https://discord.gg/Yu4VE5AM"><img src="/img/discord.svg" alt="Unser Discord Account"></a>
     </div>
     <section id="content">
         <h1>Error - 404</h1>
         <p>
             Wir konnten auf unserem Server nicht finden wonach du gesucht hast. Hast du dich vielleicht vertippt?</p>
-        <h2>😕</h2>
+        <img src="/img/warning.svg" alt="Fehler Symbol" id="big-icon">
         <p>
             Wenn du glaubst, dass es sich hierbei um einen Fehler von uns handelt, dann kontaktiere uns gerne unter <a
                 href="mailto:support@ordercorner.de">support@ordercorner.de</a>!
@@ -119,69 +115,7 @@
         <div class="footer-divider"></div>
         <h3>Copyright © 2021 Bromedia</h3>
     </footer>
-    <script>
-        document.getElementById("menuButton").addEventListener("click", function () {
-            document.getElementById("body").classList.toggle("menuactive");
-        });
-        document.getElementById("mehrClicked").addEventListener("click", function () {
-            document.getElementById("body").classList.toggle("menuactive");
-        });
-        document.getElementById("rechtlichesLink").addEventListener("click", function () {
-            document.getElementById("body").classList.toggle("menuactive");
-        });
-    </script>
-    <style>
-        #content {
-            flex-direction: column;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            margin: 0;
-            min-height: calc(100% - 55px);
-        }
-
-        #content h1 {
-            background: rgb(131, 58, 180);
-            background: linear-gradient(90deg, rgba(131, 58, 180, 1) 0%, rgba(253, 29, 29, 1) 50%, rgba(252, 176, 69, 1) 100%);
-            -webkit-background-clip: text;
-            background-clip: text;
-            -webkit-text-fill-color: transparent;
-        }
-
-        #content * {
-            text-align: center;
-            line-height: 1.4;
-        }
-
-        #content p {
-            max-width: 400px;
-        }
-
-        #content h2 {
-            margin: 0;
-        }
-
-        #content a {
-            text-decoration: none;
-            color: grey;
-        }
-
-        #zurueckButton {
-            margin: 20px;
-            color: white !important;
-            padding: 15px;
-            background-color: green;
-            border-radius: 25px;
-            -webkit-transition: transform 0.15s ease-out;
-            -moz-transition: transform 0.15s ease-out;
-            -o-transition: transform 0.15s ease-out;
-            transition: transform 0.15s ease-out;
-        }
-
-        #zurueckButton:hover {
-            transform: scale(1.05);
-        }
-    </style>
+    <script src="/script.js" defer></script>
 </body>
 
 </html>

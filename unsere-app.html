@@ -8,7 +8,7 @@
 
     <!-- IMPORTS -->
     <link rel="stylesheet" href="/styles/essentials.css">
-    <link rel="stylesheet" href="/styles/landingpage.css">
+    <link rel="stylesheet" href="/styles/unsereAppStyles.css">
 
     <!-- SEO -->
     <title>Unsere App</title>
@@ -37,9 +37,7 @@
 <body id="body">
     <nav id="nav">
         <a href="/"><img src="/img/logo_256.webp" alt="Order Corner Logo" id="order-corner-logo_headline"></a>
-        <h2>
-            Order Corner
-        </h2>
+        <h2>Order Corner</h2>
         <div id="menuButton">
             <div id="menuButtonDiv">
                 <span></span>
@@ -102,18 +100,15 @@
     <div id="headersocialGrid">
         <div id="verticalDivider"></div>
         <a href="https://www.instagram.com/order_corner_freiburg/"><img src="/img/instagram.svg"
-                alt="Unser Instagram Account" loading="lazy"></a>
-        <a href="https://twitter.com/order_corner"><img src="/img/twitter.svg" alt="Unser Twitter Account"
-                loading="lazy"></a>
+                alt="Unser Instagram Account"></a>
+        <a href="https://twitter.com/order_corner"><img src="/img/twitter.svg" alt="Unser Twitter Account"></a>
         <a href="https://www.linkedin.com/company/order-corner/"><img src="/img/linkedin.svg"
-                alt="Unser LinkedIn Account" loading="lazy"></a>
-        <a href="https://github.com/Order-Corner"><img src="/img/github.svg" alt="Unser Github Account"
-                loading="lazy"></a>
-        <a href="https://discord.gg/Yu4VE5AM"><img src="/img/discord.svg" alt="Unser Discord Account"
-                loading="lazy"></a>
+                alt="Unser LinkedIn Account"></a>
+        <a href="https://github.com/Order-Corner"><img src="/img/github.svg" alt="Unser Github Account"></a>
+        <a href="https://discord.gg/Yu4VE5AM"><img src="/img/discord.svg" alt="Unser Discord Account"></a>
     </div>
     <section id="content">
-        <img src="/img/app.svg" alt="App Symbol" style="height: 128px; width: 128px; margin-bottom: 10px;">
+        <img src="/img/app.svg" alt="App Symbol" id="big-icon">
         <h1>
             Unsere App
         </h1>
@@ -130,13 +125,15 @@
             </div>
             <div class="divider"></div>
             <p>
-                Unsere iOS App ist unser ganzer Stolz! iOS war die erste Platform, für die wir Order Corner entwickelt
-                haben. Mit
-                momentan über 300 downloads, hat die iOS App von allen Order Corner Apps die meisten Benutzer:innen -
-                zufriedene
-                Benutzer:innen! Natürlich arbeiten wir durchgängig daran unsere App weiterzuentwickeln, neue Features
-                einzubauen und
-                generell zu optimieren, ihr könnt euch also auf Vieles freuen!
+                Unsere iOS-App ist unser ganzer Stolz! iOS war die erste Plattform, für die wir Order Corner entwickelt
+                haben.<br>
+                Eine andere Besonderheit der iOS-App ist, dass sie vollständig in der nativen Programmiersprache für
+                Geräte von Apple geschrieben ist (Swift).<br>Dies ermöglicht ihr ihre bemerkenswerte
+                Geschwindigkeit.<br>
+                Mit momentan über 300 Downloads, hat die iOS-App von allen Order Corner Apps die meisten Benutzer:innen
+                – zufriedene Benutzer:innen! Natürlich arbeiten wir durchgängig daran, unsere App weiterzuentwickeln,
+                neue Features
+                einzubauen und generell zu optimieren, ihr könnt euch also auf Vieles freuen!
             </p>
             <a href="https://apps.apple.com/de/app/id1567101699"><img src="img/app-store.svg" alt="App Store Badge"
                     class="appLink" id="appStoreLinkImg"></a>
@@ -154,13 +151,12 @@
             </div>
             <div class="divider"></div>
             <p>
-                Unsere Android App haben wir auch mit einer speziell für Android gedachten Programmiersprache
-                geschrieben. Auch auf
-                diese sind wir natürlich sehr stolz! Sie hat auch schon bereits über 100 Nutzer:innen - zufriedene
-                Nutzer:innen!
-                Natürlich arbeiten wir durchgängig daran unsere App weiterzuentwickeln, neue Features einzubauen und
-                generell zu
-                optimieren, ihr könnt euch also auf Vieles freuen!
+                Die Android Order Corner App ist in einer plattformübergreifenden Programmiersprache geschrieben, was
+                uns
+                ermöglicht hat sie auch auf unsere Website hochzuladen!<br>
+                Sie hat im Google Play Store auch schon über 100 Downloads und eine Bewertung von 5.0 Sternen.<br>
+                Natürlich arbeiten wir auch an ihr durchgängig, um neue Features einzubauen und die Performance und das
+                Nutzererlebnis zu verbessern, ihr könnt euch also auf Vieles freuen!
             </p>
             <a href="https://play.google.com/store/apps/details?id=de.ordercorner.order_corner_v2"><img
                     src="img/google-play.svg" alt="Google Play Store Badge" class="appLink" id="playStoreLinkImg"></a>
@@ -178,7 +174,10 @@
             </div>
             <div class="divider"></div>
             <p>
-                Kommt bald!
+                Seit neustem ist Order Corner nun auch für das Web verfügbar!<br>
+                Wir arbeiten momentan noch daran, dass auch für größere Screens alle Bereiche gut aussehen.<br>
+                Allerdings konnten wir schon sicherstellen, dass keine Fehler auftreten, indem wir zum Großteil den Code
+                der Android App benutzen.
             </p>
             <a href="https://app.ordercorner.de" class="appLinkLink">
                 <div class="appLink web">
@@ -189,7 +188,6 @@
                 </div>
             </a>
         </div>
-        <!--Kommt noch-->
     </section>
     <footer id="footer">
         <div id="socialGrid">
@@ -210,132 +208,7 @@
         <div class="footer-divider"></div>
         <h3>Copyright © 2021 Bromedia</h3>
     </footer>
-    <script>
-        document.getElementById("menuButton").addEventListener("click", function () {
-            document.getElementById("body").classList.toggle("menuactive");
-        });
-        document.getElementById("mehrClicked").addEventListener("click", function () {
-            document.getElementById("body").classList.toggle("menuactive");
-        });
-        document.getElementById("rechtlichesLink").addEventListener("click", function () {
-            document.getElementById("body").classList.toggle("menuactive");
-        });
-    </script>
-    <style>
-        .appPreview {
-            margin-top: 30px;
-            margin-bottom: 50px;
-            padding-top: 10px;
-            padding-bottom: 10px;
-            padding-left: 20px;
-            padding-right: 20px;
-            border-radius: 25px;
-            border: 1px solid white;
-        }
-
-        .appPreview.beta::before {
-            content: 'Beta';
-            background-color: rgb(198, 20, 20);
-            padding: 5px;
-            padding-left: 15px;
-            padding-right: 15px;
-            display: inline-flex;
-            font-size: 10px;
-            transform: translateY(calc(-10px - 50%));
-            border-radius: 5px;
-        }
-
-        .appPreview-header {
-            display: flex;
-            justify-content: space-between;
-            height: 50px;
-        }
-
-        .appPreview-header>img {
-            align-self: stretch;
-            height: 50px;
-            width: 50px;
-        }
-
-        .appPreview-header span {
-            font-size: 1.3rem;
-            font-weight: 700;
-        }
-
-        .appPreview-header div {
-            display: flex;
-            align-items: center;
-        }
-
-        .colorGradient {
-            background: rgb(131, 58, 180);
-            background: linear-gradient(90deg, rgba(131, 58, 180, 1) 0%, rgba(253, 29, 29, 1) 50%, rgba(252, 176, 69, 1) 100%);
-            -webkit-background-clip: text;
-            background-clip: text;
-            -webkit-text-fill-color: transparent;
-        }
-
-        .appPreview-header h3 {
-            margin: 0px;
-        }
-
-        .appPreview .divider {
-            height: 1px;
-            width: 100%;
-            background-color: white;
-            margin-top: 10px;
-        }
-
-        .appLink {
-            height: 55px;
-        }
-
-        .appLink.web {
-            min-width: 156px;
-            display: flex;
-            background-color: black;
-            align-items: center;
-            border-radius: 7.5px;
-            border: 1px solid #b2b4b7;
-            gap: 10px;
-            height: 53px !important;
-            display: inline-flex;
-        }
-
-        .appLink.web>img {
-            align-self: stretch;
-            margin: 5px;
-            height: 43px;
-            width: 43px;
-        }
-
-        #appStoreLinkImg {
-            height: 55px;
-            width: 164.531px;
-        }
-
-        #playStoreLinkImg {
-            height: 55px;
-            width: 185.484px;
-        }
-
-        .appLinkLink {
-            color: white;
-            text-decoration: none;
-        }
-
-        .appLink.web>span {
-            margin-right: 10px;
-            white-space: nowrap;
-        }
-
-        @media only screen and (max-width: 350px) {
-            .appPreview-header>img {
-                height: 30px;
-                align-self: center;
-            }
-        }
-    </style>
+    <script src="/script.js" defer></script>
 </body>
 
 </html>

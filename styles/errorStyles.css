@@ -1,0 +1,56 @@
+#content {
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    margin-left: 10px;
+    margin-right: 10px;
+    min-height: calc(100% - 55px);
+}
+
+#big-icon {
+    margin: 0px !important;
+}
+
+#content h1 {
+    background: rgb(131, 58, 180);
+    background: linear-gradient(90deg, rgba(131, 58, 180, 1) 0%, rgba(253, 29, 29, 1) 50%, rgba(252, 176, 69, 1) 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#content * {
+    text-align: center;
+    line-height: 1.4;
+}
+
+#content p {
+    max-width: 400px;
+}
+
+#content h2 {
+    margin: 0;
+}
+
+#content a {
+    text-decoration: none;
+    color: grey;
+}
+
+#zurueckButton {
+    margin: 20px;
+    color: white !important;
+    padding: 15px;
+    background-color: green;
+    border-radius: 25px;
+    -webkit-transition: transform 0.15s ease-out;
+    -moz-transition: transform 0.15s ease-out;
+    -o-transition: transform 0.15s ease-out;
+    transition: transform 0.15s ease-out;
+}
+
+#zurueckButton:hover {
+    transform: scale(1.05);
+}

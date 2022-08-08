@@ -8,6 +8,7 @@
 
     <!-- IMPORTS -->
     <link rel="stylesheet" href="/styles/essentials.css">
+    <link rel="stylesheet" href="/styles/faqStyles.css">
 
     <!-- SEO -->
     <title>FAQ</title>
@@ -36,9 +37,7 @@
 <body id="body">
     <nav id="nav">
         <a href="/"><img src="/img/logo_256.webp" alt="Order Corner Logo" id="order-corner-logo_headline"></a>
-        <h2>
-            Order Corner
-        </h2>
+        <h2>Order Corner</h2>
         <div id="menuButton">
             <div id="menuButtonDiv">
                 <span></span>
@@ -101,18 +100,15 @@
     <div id="headersocialGrid">
         <div id="verticalDivider"></div>
         <a href="https://www.instagram.com/order_corner_freiburg/"><img src="/img/instagram.svg"
-                alt="Unser Instagram Account" loading="lazy"></a>
-        <a href="https://twitter.com/order_corner"><img src="/img/twitter.svg" alt="Unser Twitter Account"
-                loading="lazy"></a>
+                alt="Unser Instagram Account"></a>
+        <a href="https://twitter.com/order_corner"><img src="/img/twitter.svg" alt="Unser Twitter Account"></a>
         <a href="https://www.linkedin.com/company/order-corner/"><img src="/img/linkedin.svg"
-                alt="Unser LinkedIn Account" loading="lazy"></a>
-        <a href="https://github.com/Order-Corner"><img src="/img/github.svg" alt="Unser Github Account"
-                loading="lazy"></a>
-        <a href="https://discord.gg/Yu4VE5AM"><img src="/img/discord.svg" alt="Unser Discord Account"
-                loading="lazy"></a>
+                alt="Unser LinkedIn Account"></a>
+        <a href="https://github.com/Order-Corner"><img src="/img/github.svg" alt="Unser Github Account"></a>
+        <a href="https://discord.gg/Yu4VE5AM"><img src="/img/discord.svg" alt="Unser Discord Account"></a>
     </div>
     <section>
-        <img src="/img/faq.svg" alt="FAQ Symbol" style="height: 128px; width: 128px; margin-bottom: 10px;">
+        <img src="/img/faq.svg" alt="FAQ Symbol" id="big-icon">
         <h1>
             FAQ
         </h1>
@@ -344,57 +340,8 @@
         <div class="footer-divider"></div>
         <h3>Copyright © 2021 Bromedia</h3>
     </footer>
-    <script>
-        document.getElementById("menuButton").addEventListener("click", function () {
-            document.getElementById("body").classList.toggle("menuactive");
-        });
-        document.getElementById("mehrClicked").addEventListener("click", function () {
-            document.getElementById("body").classList.toggle("menuactive");
-        });
-        document.getElementById("rechtlichesLink").addEventListener("click", function () {
-            document.getElementById("body").classList.toggle("menuactive");
-        });
-    </script>
-    <style>
-        .collapsible-header-button {
-            background-color: transparent;
-            color: #FFF;
-            cursor: pointer;
-            padding: 5px;
-            padding-left: 0px;
-            width: 100%;
-            border: none;
-            text-align: left;
-            outline: none;
-            font-size: 22px;
-        }
-
-        .collapsible-header-button::before {
-            content: '+';
-            transition: transform 0.2s ease-out;
-            display: inline-block;
-            padding: 15px;
-            padding-right: 15px;
-            transform-origin: center;
-        }
-
-        .collapsible-header-button.active::before {
-            transform: rotate(45deg);
-        }
-
-        .content {
-            padding-left: 25px;
-            max-height: 0;
-            overflow: hidden;
-            transition: max-height 0.2s ease-out;
-        }
-
-        #faq-content {
-            margin-top: 50px;
-            margin-bottom: 50px;
-        }
-    </style>
-    <script>
+    <script src="/script.js" defer></script>
+    <script nonce="secureInlineScript">
         var coll = document.getElementsByClassName("collapsible-header-button");
         var i;
 

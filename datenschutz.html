@@ -8,6 +8,7 @@
 
     <!-- IMPORTS -->
     <link rel="stylesheet" href="/styles/essentials.css">
+    <link rel="stylesheet" href="/styles/datenschutzStyles.css">
 
     <!-- SEO -->
     <title>Datenschutz</title>
@@ -38,9 +39,7 @@
 <body id="body">
     <nav id="nav">
         <a href="/"><img src="/img/logo_256.webp" alt="Order Corner Logo" id="order-corner-logo_headline"></a>
-        <h2>
-            Order Corner
-        </h2>
+        <h2>Order Corner</h2>
         <div id="menuButton">
             <div id="menuButtonDiv">
                 <span></span>
@@ -103,18 +102,15 @@
     <div id="headersocialGrid">
         <div id="verticalDivider"></div>
         <a href="https://www.instagram.com/order_corner_freiburg/"><img src="/img/instagram.svg"
-                alt="Unser Instagram Account" loading="lazy"></a>
-        <a href="https://twitter.com/order_corner"><img src="/img/twitter.svg" alt="Unser Twitter Account"
-                loading="lazy"></a>
+                alt="Unser Instagram Account"></a>
+        <a href="https://twitter.com/order_corner"><img src="/img/twitter.svg" alt="Unser Twitter Account"></a>
         <a href="https://www.linkedin.com/company/order-corner/"><img src="/img/linkedin.svg"
-                alt="Unser LinkedIn Account" loading="lazy"></a>
-        <a href="https://github.com/Order-Corner"><img src="/img/github.svg" alt="Unser Github Account"
-                loading="lazy"></a>
-        <a href="https://discord.gg/Yu4VE5AM"><img src="/img/discord.svg" alt="Unser Discord Account"
-                loading="lazy"></a>
+                alt="Unser LinkedIn Account"></a>
+        <a href="https://github.com/Order-Corner"><img src="/img/github.svg" alt="Unser Github Account"></a>
+        <a href="https://discord.gg/Yu4VE5AM"><img src="/img/discord.svg" alt="Unser Discord Account"></a>
     </div>
     <section id="content">
-        <img src="/img/privacy.svg" alt="Datenschutz Symbol" style="height: 128px; width: 128px; margin-bottom: 10px;">
+        <img src="/img/privacy.svg" alt="Datenschutz Symbol" id="big-icon">
         <h1>
             Datenschutz
         </h1>
@@ -263,42 +259,7 @@
         <div class="footer-divider"></div>
         <h3>Copyright © 2021 Bromedia</h3>
     </footer>
-    <script>
-        document.getElementById("menuButton").addEventListener("click", function () {
-            document.getElementById("body").classList.toggle("menuactive");
-        });
-        document.getElementById("mehrClicked").addEventListener("click", function () {
-            document.getElementById("body").classList.toggle("menuactive");
-        });
-        document.getElementById("rechtlichesLink").addEventListener("click", function () {
-            document.getElementById("body").classList.toggle("menuactive");
-        });
-    </script>
-    <style>
-        .quote {
-            padding-left: 20px;
-            border-left: 2px solid white;
-        }
-
-        .inset {
-            margin-left: 20px;
-        }
-
-        .callout {
-            margin-top: 20px;
-            margin-bottom: 20px;
-            border-radius: 5px;
-            padding: 15px;
-            display: flex;
-            align-items: center;
-            background-color: rgba(255, 255, 255, 0.121);
-        }
-
-        .callout-symbol {
-            padding-right: 15px;
-            font-size: larger;
-        }
-    </style>
+    <script src="/script.js" defer></script>
 </body>
 
 </html>
