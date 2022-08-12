@@ -10,6 +10,8 @@
 #interduction .logo {
     height: 125px;
     width: 125px;
+    background-color: white;
+    border-radius: 25%;
 }
 
 #interduction>div {

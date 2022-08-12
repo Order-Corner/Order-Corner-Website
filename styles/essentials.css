@@ -67,6 +67,8 @@ nav>a {
 #order-corner-logo_headline {
     height: 41px;
     width: 41px;
+    background-color: white;
+    border-radius: 25%;
 }
 
 #menuButton {
