@@ -183,7 +183,22 @@
                 </p>
             </li>
         </ul>
-        <iframe src="https://www.youtube.com/embed/iIA5fRozUPA" title="Erklärvideo"></iframe>
+        <div id="iframeDisplay">
+            <button onclick="displayIframe('iIA5fRozUPA')">
+                <div>
+                    <div>
+                        <span>
+                            Youtube Video laden und Google Cookies akzeptieren!
+                        </span>
+                        <img src="/img/cookie.svg" alt="Cookie Symbol">
+                    </div>
+                    <span>
+                        Wir benutzen auf unserer Seite keine eigenen Cookies,<br>
+                        allerdings setzt Google Cookies zum Laden eines Youtube-Videos voraus!
+                    </span>
+                </div>
+            </button>
+        </div>
     </section>
     <footer id="footer">
         <div id="socialGrid">
@@ -204,6 +219,7 @@
         <div class="footer-divider"></div>
         <h3>Copyright © 2021 Bromedia</h3>
     </footer>
+    <script src="/loadVideo.js" defer></script>
     <script src="/script.js" defer></script>
 </body>
 

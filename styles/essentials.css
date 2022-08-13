@@ -87,10 +87,52 @@ h1 {
     margin: 0;
 }
 
-iframe {
+#iframeDisplay {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: calc(100% - 40px);
+    background-color: gainsboro;
     margin: 20px;
     aspect-ratio: 2;
+}
+
+#iframeDisplay span {
+    text-align: center;
+}
+
+iframe {
+    width: 100%;
+    aspect-ratio: 2;
+}
+
+#iframeDisplay>button {
+    all: unset;
+    padding: 15px;
+    border-radius: 15px;
+    display: flex;
+    background-color: green;
+}
+
+#iframeDisplay>button>div>div {
+    gap: 10px;
+    display: flex;
+}
+
+#iframeDisplay>button>div>span {
+    font-size: 0.6rem;
+}
+
+#iframeDisplay>button>div {
+    gap: 0.6rem;
+    align-items: center;
+    flex-direction: column;
+    display: flex;
+}
+
+#iframeDisplay img {
+    height: 1.2rem;
+    width: 1.2rem;
 }
 
 section {
