@@ -87,6 +87,12 @@ h1 {
     margin: 0;
 }
 
+iframe {
+    width: calc(100% - 40px);
+    margin: 20px;
+    aspect-ratio: 2;
+}
+
 section {
     max-width: 2000px;
     margin: 50px;
