@@ -215,7 +215,7 @@
             Um sich abzumelden gehen Sie in den Einstellungen Reiter der App und klicken auf das rote „Abmelden“.
         </p>
         <div id="iframeDisplay">
-            <button onclick="displayIframe('nApiUOhlMxU')">
+            <button onclick="" id="consentButton">
                 <div>
                     <div>
                         <span>
@@ -250,7 +250,12 @@
         <div class="footer-divider"></div>
         <h3>Copyright © 2021 Bromedia</h3>
     </footer>
-    <script src="/loadVideo.js" defer></script>
+    <script nonce="myVideoLoadingNonce-92b2784" defer>
+        document.getElementById("consentButton").addEventListener("click", function (e) {
+            document.getElementById("iframeDisplay").innerHTML =
+                '<iframe src="https://www.youtube.com/embed/nApiUOhlMxU" title="Erklärvideo" loading="lazy" frameborder="0"></iframe>';
+        });
+    </script>
     <script src="/script.js" defer></script>
 </body>
 

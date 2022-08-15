@@ -110,6 +110,7 @@ iframe {
     all: unset;
     padding: 15px;
     border-radius: 15px;
+    margin: 20px;
     display: flex;
     background-color: green;
 }
@@ -500,6 +501,11 @@ body.menuactive #menu {
     h1 {
         font-size: 2.5rem;
     }
+
+    #iframeDisplay {
+        width: calc(100% - 20px);
+        margin: 10px;
+    }
 }
 
 @media only screen and (max-width: 400px) {
@@ -509,6 +515,11 @@ body.menuactive #menu {
 
     h1 {
         font-size: 2.2rem;
+    }
+
+    #iframeDisplay {
+        width: 100%;
+        margin: 0px;
     }
 }
 

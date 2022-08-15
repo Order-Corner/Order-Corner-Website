@@ -38,7 +38,7 @@ Header set Cache-Control "max-age=7776000, public"
 
 # Only load Data from our Page
 
-Header set Content-Security-Policy "default-src 'self'; script-src 'self'; object-src 'self'; base-uri 'self'; frame-src youtube.com www.youtube.com;"
+Header set Content-Security-Policy "default-src 'self'; script-src 'self' 'nonce-myVideoLoadingNonce-92b2784'; object-src 'self'; base-uri 'self'; frame-src youtube.com www.youtube.com;"
 
 # Text Compression
 
