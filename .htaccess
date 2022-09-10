@@ -38,7 +38,7 @@ Header set Cache-Control "max-age=7776000, public"
 
 # Only load Data from our Page
 
-Header set Content-Security-Policy "default-src 'self'; script-src 'self' 'sha256-y1OxPfpxqe1pD01q+Pxp9VmPNi8Pbk4CNJ2LdLJ8UHo=' 'sha256-uAhlJoiH25lvmZpwvSe50r0WNKzBWnMf65x3kptB6Rc=' 'sha256-RrZ707yk8vuzaDIZw17EGCD6tAJjcRGheVCz6RpGChI=' 'ajax.googleapis.com'; object-src 'self'; base-uri 'self'; style-src 'self' 'unsafe-inline'; frame-src youtube.com www.youtube.com;"
+Header set Content-Security-Policy "default-src 'self'; script-src 'self' 'sha256-y1OxPfpxqe1pD01q+Pxp9VmPNi8Pbk4CNJ2LdLJ8UHo=' 'sha256-uAhlJoiH25lvmZpwvSe50r0WNKzBWnMf65x3kptB6Rc=' 'sha256-RrZ707yk8vuzaDIZw17EGCD6tAJjcRGheVCz6RpGChI=' ajax.googleapis.com; object-src 'self'; base-uri 'self'; style-src 'self' 'unsafe-inline'; frame-src youtube.com www.youtube.com;"
 
 # Text Compression
 
