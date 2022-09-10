@@ -3,8 +3,7 @@
     gap: 100px;
     display: flex;
     margin-top: 0;
-    padding-bottom: 15px;
-    min-height: calc(100% - 56px);
+    min-height: calc(100% - 156px);
 }
 
 #interduction .logo {
@@ -12,6 +11,7 @@
     width: 125px;
     background-color: white;
     border-radius: 25%;
+    box-shadow: 0px 0px 20px gray;
 }
 
 #interduction>div {
@@ -30,7 +30,11 @@
     width: 297px;
 }
 
-#interduction h1 span {
+#interduction>div>h1>span {
+    display: inline-block
+}
+
+.color-gradient-text {
     background: rgb(131, 58, 180);
     background: linear-gradient(90deg, rgba(131, 58, 180, 1) 0%, rgba(253, 29, 29, 1) 50%, rgba(252, 176, 69, 1) 100%);
     -webkit-background-clip: text;
@@ -85,6 +89,11 @@
     white-space: nowrap;
 }
 
+#vorteile {
+    background-color: black;
+    color: white;
+}
+
 #vorteileGrid {
     margin-top: 100px;
     margin-bottom: 200px;
@@ -99,27 +108,61 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 10px;
-    border: 1px solid gray;
+    padding: 15px;
     border-radius: 25px;
-    box-shadow: 5px 10px #888888;
+    border: 1px solid gray;
     flex: 1 0 0px;
+    -webkit-transition: all 400ms ease-in;
+    -moz-transition: all 400ms ease-in;
+    -ms-transition: all 400ms ease-in;
+    -o-transition: all 400ms ease-in;
+    transition: all 400ms ease-in;
+    opacity: 0;
 }
 
-.vorteileGridItem.scaled {
-    transform: scale(1.2);
+.vorteileGridItem.isOnScreen:hover {
+    transform: rotate3d(0, 1, 0, 20deg) rotate3d(1, 0, 0, -20deg) !important;
+}
+
+.vorteileGridItem.isOnScreen.scaled:hover {
+    transform: rotate3d(0, 1, 0, 20deg) rotate3d(1, 0, 0, -20deg) scale(1.1) !important;
+}
+
+.vorteil-left {
+    transform: translateX(-300px);
+}
+
+.vorteil-bottom {
+    transform: translateY(200px)
+}
+
+.vorteil-right {
+    transform: translateX(300px)
+}
+
+.vorteileGridItem.isOnScreen {
+    opacity: 1;
+    transform: translate(0, 0);
+}
+
+.vorteileGridItem.isOnScreen.scaled {
+    transform: scale(1.1) !important;
 }
 
 .vorteileGridItem>img {
     width: 128px;
     height: 128px;
+    aspect-ratio: 1;
 }
 
 .vorteileGridItem>p {
+    padding: 0px;
+    margin: 0px;
     text-align: center;
 }
 
 .vorteileGridItem>h2 {
+    color: green;
     text-align: center;
 }
 
@@ -160,11 +203,6 @@
 .fuer-dich-griditem h2 {
     margin-top: 0px;
     margin-bottom: 0px;
-    background: rgb(131, 58, 180);
-    background: linear-gradient(90deg, rgba(131, 58, 180, 1) 0%, rgba(253, 29, 29, 1) 50%, rgba(252, 176, 69, 1) 100%);
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
 }
 
 .fuer-dich-griditem>a {
@@ -184,8 +222,14 @@
     margin-top: 10px;
 }
 
+#partner {
+    background-color: rgb(53, 53, 152);
+    color: white;
+}
+
 .partnerGridItem {
-    border: 1px solid gray;
+    background-color: rgb(38 38 130);
+    box-shadow: 0px 0px 20px gray;
     border-radius: 25px;
     padding: 10px;
     display: flex;
@@ -220,6 +264,10 @@
     border-radius: 25px;
     padding: 10px;
     margin-bottom: 150px;
+}
+
+#ueberuns {
+    background-color: #d3d3d3;
 }
 
 #ueberunskachel img {
@@ -312,8 +360,20 @@
         flex-wrap: wrap;
     }
 
-    .vorteileGridItem.scaled {
-        transform: unset;
+    .vorteileGridItem.isOnScreen.scaled {
+        transform: scale(1) !important;
+    }
+
+    .vorteileGridItem.isOnScreen.scaled:hover {
+        transform: rotate3d(0, 1, 0, 20deg) rotate3d(1, 0, 0, -20deg) scale(1) !important;
+    }
+
+    .vorteil-bottom {
+        transform: translateX(300px)
+    }
+
+    .vorteil-right {
+        transform: translateX(-300px)
     }
 
     #interduction {
@@ -361,6 +421,7 @@
 
     .vorteileGridItem>img {
         width: 75px;
+        height: 75px;
     }
 }
 
@@ -394,6 +455,8 @@
         justify-content: start;
     }
 }
+
+@media only screen and (max-width: 660px) {}
 
 
 @media only screen and (max-width: 600px) {
