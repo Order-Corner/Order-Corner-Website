@@ -32,13 +32,32 @@ Options -Indexes
 
 # CACHE POLICY
 
-<filesMatch ".(ico|webp|svg)$">
-Header set Cache-Control "max-age=7776000, public"
-</filesMatch>
 
+# DISABLE CACHING
+<IfModule mod_headers.c>
+    Header set Cache-Control "no-cache, no-store, must-revalidate"
+    Header set Pragma "no-cache"
+    Header set Expires 0
+</IfModule>
+
+<FilesMatch "\.(css|flv|gif|htm|html|ico|jpe|jpeg|jpg|js|mp3|mp4|png|pdf|swf|txt)$">
+    <IfModule mod_expires.c>
+        ExpiresActive Off
+    </IfModule>
+    <IfModule mod_headers.c>
+        FileETag None
+        Header unset ETag
+        Header unset Pragma
+        Header unset Cache-Control
+        Header unset Last-Modified
+        Header set Pragma "no-cache"
+        Header set Cache-Control "max-age=0, no-cache, no-store, must-revalidate"
+        Header set Expires "Thu, 1 Jan 1970 00:00:00 GMT"
+    </IfModule>
+</FilesMatch>
 # Only load Data from our Page
 
-Header set Content-Security-Policy "default-src 'self'; script-src 'self' ajax.googleapis.com 'sha256-JR9VpbHd3oT97VSfDDTCUTm22Qm8u4N0PbgxJhW/Amo=' 'sha256-rXxHbpEPVN642vqioKOxeT8iDyPe62OwG6Fqv8k8byI=' 'sha256-HWjb/DkLfZVYJTf6iosWenEQk4c/zho7PHYHeFjT3tg='; object-src 'self'; base-uri 'self'; style-src 'self' 'unsafe-inline'; frame-src youtube.com www.youtube.com;"
+#Header set Content-Security-Policy "default-src 'self'; script-src 'self' ajax.googleapis.com 'sha256-JR9VpbHd3oT97VSfDDTCUTm22Qm8u4N0PbgxJhW/Amo=' 'sha256-rXxHbpEPVN642vqioKOxeT8iDyPe62OwG6Fqv8k8byI=' 'sha256-HWjb/DkLfZVYJTf6iosWenEQk4c/zho7PHYHeFjT3tg='; object-src 'self'; base-uri 'self'; style-src 'self' 'unsafe-inline' fonts.googleapis.com; frame-src youtube.com www.youtube.com;"
 
 # Text Compression
 
